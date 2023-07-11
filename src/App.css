@@ -1,0 +1,137 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.skills_bar {
+  height: 5px;
+  border-radius: 0.25rem;
+  background-color: #6e57e0;
+}
+
+:root {
+  --hue-color: 200; /* Replace 200 with your desired hue value */
+  --body-font: "Poppins", sans-serif;
+  --first-color: hsl(var(--hue-color), 69%, 61%); /* #6e57e0 */
+
+  --mb-0-25: 0.25rem;
+  --mb-0-5: 0.5rem;
+  --mb-0-75: 0.75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+  --mb-3: 3rem;
+}
+
+.my-element {
+  background-color: hsl(var(--hue-color), 69%, 61%);
+}
+.font{
+  font-family: var(--body-font);
+}
+
+/* PORTFOLIO  */
+.portfolio_container {
+  overflow: initial;
+}
+
+.portfolio_content {
+  padding: 0 2.5rem;
+}
+
+.portfolio_img {
+  width: 256px;
+  border-radius: 0.5rem;
+  justify-self: center;
+}
+
+.portfolio_title {
+  font-size: var(--h3-font-size);
+  margin-bottom: var(--mb-0-5);
+}
+
+.portfolio_description {
+  margin-bottom: var(--mb-0-75);
+}
+
+.portfolio_button:hover .button_icon {
+  transform: translateX(0.25rem);
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: "";
+}
+
+.swiper-portfolio-icon {
+  font-size: 2rem;
+  color: var(--first-color);
+}
+
+.swiper-button-prev {
+  left: -0.5rem;
+}
+
+.swiper-button-next {
+  right: -0.5rem;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets {
+  bottom: -2.5rem;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--first-color);
+}
+
+.swiper-button-prev,
+.swiper-button-next,
+.swiper-pagination-bullet {
+  outline: none;
+}
+
+.home_blob {
+  width: 200px;
+  fill: var(--first-color);
+}
+
+.home_blob-img {
+  width: 170px;
+}
+
+
